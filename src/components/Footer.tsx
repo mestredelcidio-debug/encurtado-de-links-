@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link2, Shield, Heart, ExternalLink } from 'lucide-react';
+import { Shield, Heart, ExternalLink } from 'lucide-react';
 import { ActiveTab } from '../types';
+import { LogoIcon } from './LogoIcon';
 
 interface FooterProps {
   setActiveTab: (tab: ActiveTab) => void;
@@ -13,8 +14,8 @@ export const Footer: React.FC<FooterProps> = ({ setActiveTab }) => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="space-y-4 md:col-span-2">
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-blue-600 to-cyan-400 flex items-center justify-center text-white font-bold">
-                <Link2 className="w-4 h-4" />
+              <div className="w-8 h-8 flex items-center justify-center">
+                <LogoIcon className="w-8 h-8" />
               </div>
               <span className="text-lg font-bold text-white">Decix Analytics</span>
             </div>

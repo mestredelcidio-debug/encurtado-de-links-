@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link2, BarChart3, ShieldCheck, FileText, HelpCircle, Sparkles } from 'lucide-react';
+import { BarChart3, ShieldCheck, FileText, HelpCircle, Sparkles } from 'lucide-react';
 import { ActiveTab } from '../types';
+import { LogoIcon } from './LogoIcon';
 
 interface HeaderProps {
   activeTab: ActiveTab;
@@ -16,8 +17,8 @@ export const Header: React.FC<HeaderProps> = ({ activeTab, setActiveTab, myLinks
           onClick={() => setActiveTab('shortener')}
           className="flex items-center gap-3 cursor-pointer group"
         >
-          <div className="w-11 h-11 rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-cyan-400 flex items-center justify-center shadow-lg shadow-blue-500/25 group-hover:scale-105 transition-transform">
-            <Link2 className="w-6 h-6 text-white" />
+          <div className="w-11 h-11 flex items-center justify-center group-hover:scale-105 transition-transform">
+            <LogoIcon className="w-11 h-11" />
           </div>
           <div>
             <span className="text-xl font-bold bg-gradient-to-r from-white via-slate-100 to-slate-300 bg-clip-text text-transparent">
