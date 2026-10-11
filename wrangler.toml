@@ -1,0 +1,11 @@
+name = "decix-analytics"
+main = "server.ts"
+compatibility_date = "2026-10-11"
+
+[vars]
+ENVIRONMENT = "production"
+
+# Example Cloudflare KV binding for high-performance link resolution cache
+# [[kv_namespaces]]
+# binding = "LINKS_KV"
+# id = "your_kv_namespace_id"

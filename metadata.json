@@ -1,0 +1,6 @@
+{
+  "name": "Decix Analytics",
+  "description": "Plataforma gratuita e profissional de encurtamento de URLs e análise de cliques.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
